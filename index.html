@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <title>Aaqib Sajjad | Portfolio</title>
+</head>
+<body >
+  <div class="container" ng-app="myApp">
+    <div ng-controller="MainController" class="h-100">
+      <div class="card">
+        <div class="card-body">
+          <div class="h1 display-1 text-center">{{ name }}</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AngularJS -->
+  <script src="/js/angular.min.js"></script>
+  <!-- Bootstrap 5 -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Code -->
+  <script>
+      var myApp= angular.module("myApp",[]);
+      myApp.controller("MainController", function($scope){
+
+        $scope.name = "Aaqib Sajjad";
+
+      });
+  </script>
+</body>
+</html>
